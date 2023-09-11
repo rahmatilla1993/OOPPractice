@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.task1;
 
 public class Doctor {
     protected String firstName;

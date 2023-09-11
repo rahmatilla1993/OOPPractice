@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.task1;
 
 public class Lor extends Doctor {
     private final boolean isOtolaryngologist; // Lor otolaringologmi?
