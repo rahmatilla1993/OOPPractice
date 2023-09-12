@@ -2,10 +2,19 @@ package inheritance.task2;
 
 public class Subwoofer extends Sound{
     private float subwooferSize;
+    public Subwoofer() {}
 
     public Subwoofer(String brand, float price, int warrantyYear,
                      String soundType, int numberOfSpeakers, float subwooferSize) {
         super(brand, price, warrantyYear, soundType, numberOfSpeakers);
+        this.subwooferSize = subwooferSize;
+    }
+
+    public float getSubwooferSize() {
+        return subwooferSize;
+    }
+
+    public void setSubwooferSize(float subwooferSize) {
         this.subwooferSize = subwooferSize;
     }
 

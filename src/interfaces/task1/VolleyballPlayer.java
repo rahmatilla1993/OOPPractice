@@ -3,9 +3,19 @@ package interfaces.task1;
 public class VolleyballPlayer extends Player {
     protected int numberOfPoints;
 
+    public VolleyballPlayer() {}
+
     public VolleyballPlayer(String nameOfPlayer, String sportType,
                             int numberPosition, String teamName) {
         super(nameOfPlayer, sportType, numberPosition, teamName);
+    }
+
+    public int getNumberOfPoints() {
+        return numberOfPoints;
+    }
+
+    public void setNumberOfPoints(int numberOfPoints) {
+        this.numberOfPoints = numberOfPoints;
     }
 
     @Override

@@ -3,7 +3,8 @@ package inheritance.task1;
 public class Xirurg extends Doctor {
 
     //xirurgik mutaxassisligi
-    private final String surgicalSpeciality;
+    private String surgicalSpeciality;
+    public Xirurg() {}
 
     public Xirurg(String firstName,
                   String lastName,
@@ -11,6 +12,14 @@ public class Xirurg extends Doctor {
                   String hospital,
                   String surgicalSpeciality) {
         super(firstName, lastName, age, experiencedYear, hospital);
+        this.surgicalSpeciality = surgicalSpeciality;
+    }
+
+    public String getSurgicalSpeciality() {
+        return surgicalSpeciality;
+    }
+
+    public void setSurgicalSpeciality(String surgicalSpeciality) {
         this.surgicalSpeciality = surgicalSpeciality;
     }
 

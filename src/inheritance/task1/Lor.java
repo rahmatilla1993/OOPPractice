@@ -1,7 +1,9 @@
 package inheritance.task1;
 
 public class Lor extends Doctor {
-    private final boolean isOtolaryngologist; // Lor otolaringologmi?
+    private boolean isOtolaryngologist; // Lor otolaringologmi?
+
+    public Lor() {}
 
     public Lor(String firstName, String lastName,
                int age, int experiencedYear,
@@ -9,6 +11,14 @@ public class Lor extends Doctor {
     ) {
         super(firstName, lastName, age, experiencedYear, hospital);
         this.isOtolaryngologist = isOtolaryngologist;
+    }
+
+    public boolean isOtolaryngologist() {
+        return isOtolaryngologist;
+    }
+
+    public void setOtolaryngologist(boolean otolaryngologist) {
+        isOtolaryngologist = otolaryngologist;
     }
 
     @Override
